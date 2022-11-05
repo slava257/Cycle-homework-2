@@ -1,74 +1,26 @@
 public class Main {
     public static void main(String[] args) {
-        //Домашнее задание 2
-        //Напишите программу, которая выводит в консоль сумму накоплений.
-        //Василий решил положить деньги на накопительный счет,
-        // где каждый месяц к сумме его вклада добавляется ещё 7%.
-        //Первоначальная сумма вклада Василия составляет 15 тысяч рублей.
-        //Задание 1
-        //Вычислите и выведите в консоль, сколько месяцев Василию нужно будет копить,
-        // чтобы собрать сумму в 12 миллионов рублей при условии,
-        // что процент банка от накоплений не меняется, а всегда равен 7%.
-        // Выведите в консоль результат программы с указанием суммы накоплений по каждому месяцу.
-        System.out.println("Task 1");
-        float depositAmount = 15000f;
-        float monthlyPercentage = 7f;
-        int month = 0;
-        while (depositAmount < 12_000_000) {
-            month++;
-            depositAmount += depositAmount * monthlyPercentage / 100;
-            System.out.println("в " + month + " месяц накопления достигнут " + depositAmount + " суммы");
-        }
-            //Задание 2
-        //Видоизмените программу таким образом, чтобы в консоль выводились не все месяцы подряд,
-        // а только каждый шестой. Должны быть видны накопления за 6, 12, 18, 24 и далее месяцы.
-            System.out.println("Task 2");
-            float depositAmount1 = 15000f;
-            float monthlyPercentage1 = 7f;
-            int month1 = 0;
-            while (depositAmount1 < 12_000_000) {
-                month1++;
-                depositAmount1 += depositAmount1 * monthlyPercentage1 / 100;
-                if (month1 % 6 == 0) {
-                    System.out.println("в " + month1 + " месяц накопления достигнут " + depositAmount1 + " суммы");
-                }
-            }
-            //Задание 3
-        //Василий решил год копить деньги ближайшие 9 лет. И он хочет знать,
-        // какой будет сумма его накоплений каждые полгода на протяжении этих 9 лет.
-        //Исходная сумма всё так же 15 тысяч рублей, проценты банка – 7% ежемесячно.
-        //Напишите программу, которая будет выводить Василию сумму его накоплений за следующие
-        // каждые полгода в течение 9 лет.
-            System.out.println("Task 3");
-            float depositAmount2 = 15000f;
-            float monthlyPercentage2 = 7f;
-            int perYear = 12;
-            int years = perYear * 9;
-            for (month = 0; month < years; month++) {
-                depositAmount2 += depositAmount2 * monthlyPercentage2 / 100;
-                if (month % 6 == 0) {
-                    System.out.println("в " + month + " месяц накопления достигнут " + depositAmount2 + " суммы");
-                }
-            }
-            //Задание 4
-        //В вашей компании пятница является днем отчетным.
         //
-        //Нам нужно написать программу, которая считает дни месяца по датам, определяет,какой день пятница,
-        // и выводит сообщение с напоминанием, что нужно подготовить еженедельный отчет.
-        //Условия задачи:
-        //Создайте переменную типа int, которая хранит в себе номер первой пятницы месяца (число от 1 до 7).
-        //Выведите на каждую пятницу месяца (включая полученную) сообщение следующего вида:
-        //"Сегодня пятница, ...-е число. Необходимо подготовить отчет."
-        //В нашем месяце 31 день.
-        // В результате у вас должно вывестись от 4 до 5 сообщений с напоминаниями по разным датам.
-            System.out.println("Task 4");
-            int firstFriday = 4;
-            for (int day = 31; day >= 1; day--) {
-                if (day % 7 == firstFriday)
-                    System.out.println("Сегодня пятница, " + day + " число. Необходимо подготовит отчет");
+        System.out.println("Task 1");
+        int sawAComet = 79;
+        int currentYear = -200;
+        int currentYear1 = 100;
+        int upToTheCurrentYear = 2022 + currentYear;
+        int afterCurrentYear = 2022 + currentYear1;
+        for (int year = upToTheCurrentYear; year <= afterCurrentYear;year++ ) {
+            if (year % sawAComet == 0 && year % sawAComet == 0) {
+                System.out.println(year);
             }
         }
+        //
+        System.out.println("Task 2");
+        int multiplication = 2;
+        for(int number = 1;number<=10;number++){
+            System.out.println(+multiplication+ "*" +number+"="+(number*multiplication));
+        }
+
     }
+}
 
 
 
